@@ -441,9 +441,6 @@ img {
   margin-right: 120px;
 }
 
-.footer-social {
-}
-
 .ftr-social-media {
   font-weight: 500;
   font-size: 16px;
@@ -485,6 +482,74 @@ img {
 .ftr-social-link:hover,
 .ftr-social-link:focus {
   background-color: #31d0aa;
+}
+
+.ftr-form {
+  margin-left: auto;
+}
+
+.sub-ftr-text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-wight-color);
+
+  margin-bottom: 16px;
+}
+
+.subscribe {
+  display: flex;
+  gap: 24px;
+}
+
+.email {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--titel-text-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  padding: 8px 16px;
+  height: 40px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email:focus,
+.email:hover {
+  outline: none;
+  border-color: var(--logo-blue-color);
+}
+
+.submit-btn {
+  display: flex;
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  border: 0;
+
+  color: var(--main-wight-color);
+  background-color: var(--logo-blue-color);
+  text-align: center;
+  cursor: pointer;
+  border-color: transparent;
+  letter-spacing: 0.04em;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--nav-hover-caolor);
+}
+
+.ftr-telegram-icon {
+  height: 24px;
+  width: 24px;
 }
 
 /* portfolio */
@@ -615,6 +680,7 @@ img {
   position: relative;
   width: 408px;
   height: 576px;
+  padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -623,6 +689,18 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.modal-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--titel-text-color);
+
+  margin-bottom: 16px;
 }
 
 .modal-close {
@@ -653,4 +731,279 @@ img {
 .close-icon {
   height: 8px;
   width: 8px;
+}
+
+.modal-form {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--customers-color);
+}
+
+.name-lable {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58px;
+}
+
+.name-input {
+  margin-bottom: 8px;
+}
+
+.modal-name {
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-name:focus,
+.modal-name:hover {
+  outline: none;
+  border-color: var(--logo-blue-color);
+}
+
+.modal-name:focus,
+.modal-name:hover + .icon-person {
+  fill: var(--logo-blue-color);
+}
+
+.icon-person {
+  position: absolute;
+  bottom: 11px;
+  left: 16px;
+
+  height: 18px;
+  width: 18px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-lable {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58px;
+}
+
+.phone-input {
+  margin-bottom: 8px;
+}
+
+.modal-phone {
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-phone:focus,
+.modal-phone:hover {
+  outline: none;
+  border-color: var(--logo-blue-color);
+}
+
+.modal-phone:focus,
+.modal-phone:hover + .icon-phone {
+  fill: var(--logo-blue-color);
+}
+
+.icon-phone {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+
+  height: 24px;
+  width: 18px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-lable {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58px;
+}
+
+.email-input {
+  margin-bottom: 8px;
+}
+
+.modal-email {
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-email:focus,
+.modal-email:hover {
+  outline: none;
+  border-color: var(--logo-blue-color);
+}
+
+.modal-email:focus,
+.modal-email:hover + .icon-email {
+  fill: var(--logo-blue-color);
+}
+
+.icon-email {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+
+  height: 24px;
+  width: 18px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-lable {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 138px;
+}
+
+.comment-input {
+  margin-bottom: 16px;
+}
+
+.comment-lable {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 138px;
+}
+
+.modal-comment {
+  display: block;
+  margin-top: 4px;
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment:focus,
+.modal-comment:hover {
+  outline: none;
+  border-color: var(--logo-blue-color);
+}
+
+.modal-comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.accept {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+
+  color: #757575;
+
+  margin-bottom: 24px;
+}
+
+.checkbox-accept-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.checkbox-accept {
+  appearance: none;
+}
+
+.privacy-policy {
+  margin-left: 4px;
+}
+
+.custom-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+}
+
+.checkbox-icon {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.checkbox-accept:checked ~ .custom-checkbox > .checkbox-icon {
+  opacity: 1;
+}
+
+.checkbox-accept:checked ~ .custom-checkbox {
+  border: 0;
+}
+
+.send-btn {
+  display: block;
+  padding: 16px 64px;
+  margin: 0 auto;
+  border: 0;
+
+  color: var(--main-wight-color);
+  background-color: var(--logo-blue-color);
+  cursor: pointer;
+  border-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background-color: var(--nav-hover-caolor);
 }
