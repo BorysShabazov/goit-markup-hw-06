@@ -392,7 +392,7 @@ img {
   justify-content: center;
   height: 88px;
   width: 100%;
-  border: 1px solid var(--customers-color);
+  border: 1px solid currentColor;
   border-radius: 4px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -511,12 +511,12 @@ img {
 
   padding: 8px 16px;
   height: 40px;
+  width: 264px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email:focus,
-.email:hover {
+.email:focus {
   outline: none;
   border-color: var(--logo-blue-color);
 }
@@ -677,7 +677,7 @@ img {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   width: 408px;
   height: 584px;
   padding: 72px 24px 24px 24px;
@@ -707,6 +707,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   width: 24px;
   height: 24px;
@@ -745,7 +746,6 @@ img {
 
 .name-form {
   margin-bottom: 8px;
-  height: 58px;
 }
 
 .name-label {
@@ -765,14 +765,12 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.name-input:focus,
-.name-input:hover {
+.name-input:focus {
   outline: none;
   border-color: var(--logo-blue-color);
 }
 
-.name-input:focus,
-.name-input:hover + .icon-person {
+.name-input:focus + .icon-person {
   fill: var(--logo-blue-color);
 }
 
@@ -811,14 +809,12 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-phone:focus,
-.modal-phone:hover {
+.modal-phone:focus {
   outline: none;
   border-color: var(--logo-blue-color);
 }
 
-.modal-phone:focus,
-.modal-phone:hover + .icon-phone {
+.modal-phone:focus + .icon-phone {
   fill: var(--logo-blue-color);
 }
 
@@ -857,14 +853,12 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-email:focus,
-.modal-email:hover {
+.modal-email:focus {
   outline: none;
   border-color: var(--logo-blue-color);
 }
 
-.modal-email:focus,
-.modal-email:hover + .icon-email {
+.modal-email:focus + .icon-email {
   fill: var(--logo-blue-color);
 }
 
@@ -882,8 +876,7 @@ img {
 /* comment */
 
 .comment-input {
-  margin-bottom: 12px;
-  height: 138px;
+  margin-bottom: 16px;
 }
 
 .comment-label {
@@ -904,8 +897,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment-text:focus,
-.comment-text:hover {
+.comment-text:focus {
   outline: none;
   border-color: var(--logo-blue-color);
 }
@@ -930,7 +922,6 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 24px;
 }
 
 .checkbox-accept {
@@ -938,9 +929,7 @@ img {
 }
 
 .custom-checkbox {
-  position: absolute;
-  left: 0;
-  top: 0;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 1.25px solid #2e2f42;
